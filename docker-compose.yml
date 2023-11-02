@@ -1,10 +1,12 @@
 version: '3'
 
 services:
-  web:
+  main:
     build:
       context: ./main
       dockerfile: Dockerfile 
+    links:
+      - db
     ports:
       - "80:5000"
     depends_on:
