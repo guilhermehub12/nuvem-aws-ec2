@@ -7,3 +7,6 @@
 - configure a porta no arquivo 'docker-compose.yml'
 - use o comando 'sudo docker compose up -d'
 - para desligar use 'sudo docker compose down'
+
+### Demo
+[Assistir](https://www.youtube.com/watch?v=8HyIjDJsxIY)
