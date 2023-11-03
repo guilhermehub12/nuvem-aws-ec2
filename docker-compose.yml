@@ -14,12 +14,15 @@ services:
     environment:
       - FLASK_APP=app.py
       - FLASK_RUN_HOST=0.0.0.0
+    volumes:
+      - ./main:/app
 
   db:
     image: mysql:latest
     environment:
       - MYSQL_ROOT_PASSWORD=root
       - MYSQL_DATABASE=engajamente
+      - MYSQL_CHARSET=utf8
     volumes:
       - ./db/setup.sql:/docker-entrypoint-initdb.d/setup.sql
 
